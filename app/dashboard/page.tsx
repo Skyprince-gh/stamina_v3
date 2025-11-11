@@ -7,7 +7,7 @@ import OrderSummaryContent from "@/components/modules/DashboardCardComponents/Or
 import TrafficSourceContent from "@/components/modules/DashboardCardComponents/TrafficSorceContent";
 import StockLevelContent from "@/components/modules/DashboardCardComponents/StockLevelContent";
 import MostItemsSoldContent from "@/components/modules/DashboardCardComponents/MostItemsSoldContent";
-import RecentViewContent from "@/components/modules/DashboardCardComponents/RecentViewsContent";
+import RecentReviewsContent from "@/components/modules/DashboardCardComponents/RecentReviewsContent";
 
 const Dashboard = () => {
   const TimeFrameConfig = {
@@ -16,7 +16,7 @@ const Dashboard = () => {
   };
   return (
     <div className="w-full px-5 h-full">
-      <DashboardHeader />
+      <DashboardHeader title="Dashboard" />
       <div className="grid grid-cols-10 grid-rows-8 gap-4">
         <div className="col-span-2 h-[150px]">
           <StatsCard
@@ -99,9 +99,9 @@ const Dashboard = () => {
             <MostItemsSoldContent />
           </StatsCardMd>
         </div>
-        <div className="col-span-2 row-span-4">
+        <div className="col-span-2 row-span-5">
           <StatsCardLg title="Recent Reviews">
-            <RecentViewContent />
+            <RecentReviewsContent />
           </StatsCardLg>
         </div>
         <div className="col-span-8 row-span-3"><StatsCardMd title="Products"></StatsCardMd></div>

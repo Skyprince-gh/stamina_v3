@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-const RecentViewContent = () => {
+const RecentReviewsContent = () => {
   const recentReviews = [
     {
       id: 1,
@@ -32,6 +32,12 @@ const RecentViewContent = () => {
         message: "The variety of chips is impressive. Will order again soon.",
         time: "6:15pm",
     },
+    {
+        id: 5,
+        sender: "Abena",
+        message: "The flavors are unique and delicious. Highly satisfied!",
+        time: "6:15pm",
+    },
   ];
   return (
     <ul className="flex flex-col gap-10">
@@ -56,7 +62,7 @@ const RecentViewContent = () => {
   );
 };
 
-export default RecentViewContent;
+export default RecentReviewsContent;
 
 //this is the component responsible for rendering the recent reviews content in the reviews card.
 //It need some more work done. The height of each review item should be dynamic based on the content length.

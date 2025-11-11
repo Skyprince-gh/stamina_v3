@@ -7,11 +7,11 @@ import {
 } from "@/components/ui/popover";
 import { Bell } from "lucide-react";
 
-const DashboardHeader = () => {
+const DashboardHeader:React.FC<{title?:string}> = ({title}) => {
     return ( 
         <header className=" flex items-center h-[100px] justify-between w-full">
         <div>
-          <h2 className="font-bold text-4xl">Dashboard</h2>
+          <h2 className="font-bold text-4xl">{title}</h2>
         </div>
         <div className="flex gap-5">
           <Command>
